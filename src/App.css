@@ -1,0 +1,20 @@
+/* App.css */
+body, html {
+    background: rgb(255,240,198);
+    background: radial-gradient(circle, rgba(255,240,198,1) 0%, rgba(209,255,159,1) 100%);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Tahoma, Verdana, sans-serif;
+    /*overflow: hidden; !* Prevent scrolling for the entire page *!*/
+}
+
+.app-container {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: darkgray   ;
+}
+
+/* Add any other styles as needed */

@@ -1,0 +1,96 @@
+/* Carousel.css */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust this value based on your design */
+    margin: 0 auto;
+}
+
+.carousel-image {
+    max-width: 100%;
+    max-height: 600px; /* Adjust this value based on your design */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+/* Dots and Progress Bar Container */
+.overlay-container {
+    position: absolute;
+    top: 0; /* Adjust this value to set the distance from the top */
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; /* Ensure overlay is above the image */
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+/* Dots Styles */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust this value as needed */
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Navigation Buttons Styles */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.carousel-btn--prev {
+    left: 0;
+}
+
+.carousel-btn--next {
+    right: 0;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .carousel-container {
+        max-width: 400px;
+    }
+
+    .carousel-image {
+        max-height: 400px;
+    }
+}
